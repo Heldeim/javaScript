@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: white;
+}
+
+.text {
+    font-variant: small-caps;
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+#txtHex {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.btn {
+    font-variant: small-caps;
+    font-family: monospace;
+    font-size: x-large;
+
+    background: black;
+    color: white;
+
+    border: transparent;
+    border-radius: 10px;
+
+    padding: 0.25%;
+}
