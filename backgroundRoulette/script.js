@@ -7,7 +7,7 @@ const color = ['white', 'red', 'blue', 'yellow', 'orange', 'purple', 'green', 'c
 function switchColor() {
     let colorValue = color[Math.floor(Math.random() * color.length)];
 
-    colorName.innerText = colorValue;
+    colorName.textContent = colorValue;
     colorObject.style.backgroundColor = colorValue;
 }
 

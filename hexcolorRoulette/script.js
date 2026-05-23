@@ -13,7 +13,7 @@ function switchHexCode() {
         code += hexValue
     }
 
-    hexCode.innerText = code;
+    hexCode.textContent = code;
     colorObject.style.backgroundColor = code;
 
 }
