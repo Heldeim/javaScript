@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    min-width: 100vw;
+    height: 100vh;
+}
+
+input {
+    min-width: 30%;
+
+    padding: 0.2%;
+    box-sizing: border-box;
+}
+
+.textSpace {
+    min-width: 30%;
+    min-height: 10%;
+
+    border: solid 1px;
+
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.btn {
+    font-variant: small-caps;
+    font-family: monospace;
+    font-size: x-large;
+
+    background: black;
+    color: white;
+
+    border: transparent;
+    border-radius: 10px;
+
+    padding: 0.25%;
+}
