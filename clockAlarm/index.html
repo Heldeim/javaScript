@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock with Alarm</title>
+</head>
+
+<body>
+    <main>
+        <div class="analogClock">
+            <div class="hand analogHour"></div>
+            <div class="hand analogMinute"></div>
+            <div class="hand analogSecond"></div>
+        </div>
+        <div class="digitalClock">
+            <div class="time" id="time"></div>
+        </div>
+        <div class="alarm">
+            <select class="setSelect" id="setHour">
+                <option value="">Hora</option>
+                <script>
+                    const selectHour = document.getElementById('setHour');
+                    for (let i = 0; i <= 23; i++) {
+                        const option = document.createElement('option');
+                        option.value = i < 10 ? '0' + i : i;
+                        option.text = i < 10 ? '0' + i : i;
+                        selectHour.appendChild(option);
+                    }
+                </script>
+            </select>
+            <select class="setSelect" id="setMinute">
+                <option value="">Minuto</option>
+                <script>
+                    const selectMinute = document.getElementById('setMinute');
+                    for (let i = 0; i <= 59; i++) {
+                        const option = document.createElement('option');
+                        option.value = i;
+                        option.text = i < 10 ? '0' + i : i;
+                        selectMinute.appendChild(option);
+                    }
+                </script>
+            </select>
+            <button class="setAlarm" id="setAlarm">Definir Alarme</button>
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>
